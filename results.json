@@ -1,0 +1,148 @@
+{
+ "shape": [
+  569,
+  32
+ ],
+ "missing": 0,
+ "duplicates": 0,
+ "class_counts": {
+  "Benign": 357,
+  "Malignant": 212
+ },
+ "outlier_top": {
+  "area error": 65,
+  "radius error": 38,
+  "perimeter error": 38,
+  "worst area": 35,
+  "smoothness error": 30
+ },
+ "rows_with_outlier": 171,
+ "skew_top": {
+  "area error": 5.45,
+  "concavity error": 5.11,
+  "fractal dimension error": 3.92,
+  "perimeter error": 3.44,
+  "radius error": 3.09
+ },
+ "top_corr_target": {
+  "worst concave points": 0.794,
+  "worst perimeter": 0.783,
+  "mean concave points": 0.777,
+  "worst radius": 0.776,
+  "mean perimeter": 0.743
+ },
+ "radius_perimeter_corr": 0.998,
+ "radius_area_corr": 0.987,
+ "pairs_corr_gt_09": 21,
+ "models": {
+  "Logistic Regression": {
+   "cv_auc": 0.9914,
+   "cv_std": 0.009,
+   "acc": 0.965,
+   "prec": 0.98,
+   "rec": 0.9245,
+   "f1": 0.9515,
+   "auc": 0.9962,
+   "cm": [
+    [
+     89,
+     1
+    ],
+    [
+     4,
+     49
+    ]
+   ]
+  },
+  "Random Forest": {
+   "cv_auc": 0.9879,
+   "cv_std": 0.0095,
+   "acc": 0.965,
+   "prec": 1.0,
+   "rec": 0.9057,
+   "f1": 0.9505,
+   "auc": 0.9957,
+   "cm": [
+    [
+     90,
+     0
+    ],
+    [
+     5,
+     48
+    ]
+   ]
+  },
+  "Gradient Boosting": {
+   "cv_auc": 0.9864,
+   "cv_std": 0.0071,
+   "acc": 0.965,
+   "prec": 1.0,
+   "rec": 0.9057,
+   "f1": 0.9505,
+   "auc": 0.9954,
+   "cm": [
+    [
+     90,
+     0
+    ],
+    [
+     5,
+     48
+    ]
+   ]
+  }
+ },
+ "n_train": 426,
+ "n_test": 143,
+ "best": "Logistic Regression",
+ "top_imp": {
+  "worst symmetry": 0.0097,
+  "worst texture": 0.0094,
+  "worst concavity": 0.0069,
+  "mean concavity": 0.0038,
+  "mean concave points": 0.0032,
+  "worst concave points": 0.0031,
+  "worst radius": 0.0019,
+  "worst area": 0.0015,
+  "worst perimeter": 0.0015,
+  "radius error": 0.0014
+ },
+ "thresholds": [
+  {
+   "t": 0.5,
+   "rec": 0.9245,
+   "prec": 0.98,
+   "fn": 4,
+   "fp": 1
+  },
+  {
+   "t": 0.4,
+   "rec": 0.9434,
+   "prec": 0.9804,
+   "fn": 3,
+   "fp": 1
+  },
+  {
+   "t": 0.3,
+   "rec": 0.9623,
+   "prec": 0.9808,
+   "fn": 2,
+   "fp": 1
+  },
+  {
+   "t": 0.2,
+   "rec": 0.9623,
+   "prec": 0.9444,
+   "fn": 2,
+   "fp": 3
+  },
+  {
+   "t": 0.1,
+   "rec": 0.9811,
+   "prec": 0.8966,
+   "fn": 1,
+   "fp": 6
+  }
+ ]
+}
